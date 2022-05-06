@@ -16,7 +16,7 @@ class SpSaoPauloSpider(BaseGazetteSpider):
     BASE_URL = "http://diariooficial.imprensaoficial.com.br"
     allowed_domains = ["diariooficial.imprensaoficial.com.br"]
     name = "sp_sao_paulo"
-    start_date = date.today()
+    start_date = date(2022, 5, 5)
 
     def start_requests(self):
         # Need to have the month's name in portuguese for the pdf url
